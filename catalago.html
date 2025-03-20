@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    
+}
+
+.card-filme {
+    background: #363333;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.card-filme2 {
+    background: #35353a;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.card-filme3 {
+    background: #31302d;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.card-filme4 {
+    background: #292323;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.card-filme5 {
+    background: #262429;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+.card-filme6 {
+    background: #222420;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.418);
+    display: inline-block;
+}
+
+.card-filme8 {
+    background: #2e2a28;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.418);
+    display: inline-block;
+}
+
+.card-filme9 {
+    background: #25252c;
+    width: 280px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 15px;
+    transition: transform 0.3s;
+    color: #ffffff9a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.418);
+    display: inline-block;
+}
+
+
+.card-filme:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme2:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme3:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme4:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme5:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme6:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme8:hover {
+    transform: translateY(-5px);
+}
+
+.card-filme9:hover {
+    transform: translateY(-5px);
+}
+
+.poster {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #e9b2cd;
+}
+
+.poster2 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #a2b6dd;
+}
+
+.poster3 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #cfa35f;
+}
+
+.poster4 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #d44f4f;
+}
+
+.poster5 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #6c45b6;
+}
+
+.poster6 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #88bb5f;
+}
+
+.poster8 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #e79e61;
+}
+
+.poster9 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 3px solid #3937bd;
+}
+
+.conteudo {
+    padding: 20px;
+    position: relative;
+}
+
+.titulo {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #f396ad;
+}
+
+.titulo2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #6790cc;
+}
+
+.titulo3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #a58b53;
+}
+
+.titulo4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #b13737;
+}
+
+.titulo5 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #7a5d9b;
+}
+
+.titulo6 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #7a5d9b;
+}
+
+.titulo6 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #88bb5f;
+}
+
+.titulo8 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #e79e61;
+}
+
+.titulo9 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #3937bd;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.genero {
+    background: #b8528a;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero2 {
+    background: #5254b8;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero3 {
+    background: #b88952;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero4 {
+    background: #803131;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero5 {
+    background: #46286d;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero6 {
+    background: #88bb5f;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero8 {
+    background: #e79e61;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.genero9 {
+    background: #3937bd;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+.avaliacao{color:#ffd700;margin-bottom: 10px;}
+
+.descricao {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #aaa;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #f39dc8;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao2 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #7e9fdb;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao3 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #cfa35f;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao4 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #bb4343;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao5 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #6d43bb;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao6 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #88bb5f;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao8 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #e79e61;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao9 {
+    display: block;
+    width: 100%;
+    background: #222222;
+    color: #3937bd;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+
+.botao:hover {
+    background: #f39dc8; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao2:hover {
+    background: #7e9fdb; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao3:hover {
+    background: #e2b777; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao4:hover {
+    background: #b64545; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao5:hover {
+    background: #6d43bb; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao6:hover {
+    background: #88bb5f; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao7:hover {
+    background: #6d43bb; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao8:hover {
+    background: #e79e61; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+.botao9:hover {
+    background: #3937bd; /* Um tom mais escuro ao passar o mouse */
+    color: #ffffff;
+}
+
+
+.ano-duracao {
+    background: #f39dc8 ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ano-duracao2 {
+    background: #9db4f3 ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+ 
+.ano-duracao3 {
+    background: #cfa35f ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ano-duracao4 {
+    background: #cfa35f ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+ 
+.ano-duracao5 {
+    background: #cfa35f ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ano-duracao6 {
+    background: #cfa35f ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ano-duracao8 {
+    background: #e79e61 ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.ano-duracao9 {
+    background: #e79e61 ;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+.fa-star {
+    margin-right: 3px;
+    color: #e6b14e;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="card-filme">
+        <img src="Imagem/Nimona_(filme).png" alt="poster do filme" class="poster">
+        <div class="conteudo">
+            <h2 class="titulo">Nimona</h2>
+            <div class="ano-duração">
+                <span>2023</span>
+                <span>101 min</span>
+            </div>
+        <div class="info">
+            <span class="genero">Aventura/Fantasia</span>
+            <div class="avaliacao"></div>
+            <i class="fa-solid fa-star"></i>
+            4.2/5
+        </div>
+        <p class="descricao">
+            Acusado de um crime trágico, 
+            um cavaleiro pede ajuda a uma adolescente para conseguir provar sua inocência.
+        </p>
+        <a href="https://www.imdb.com/pt/title/tt19500164/?ref_=nv_sr_srsg_0_tt_4_nm_4_in_0_q_Nimona" target="_blank" class="botao">IMDB</a>
+    </div>
+</div>
+
+ <!--FILME 2-->
+
+<div class="card-filme2">
+    <img src="Imagem/aranhaverso.jpg" alt="poster do filme" class="poster2">
+    <div class="conteudo">
+        <h2 class="titulo2">Aranhaverso</h2>
+        <div class="ano-duração">
+            <span>2023</span>
+            <span>140 min</span>
+        </div>
+    <div class="info">
+        <span class="genero2">Ação/Ficção científica</span>
+        <div class="avaliacao2"></div>
+        <i class="fa-solid fa-star"></i>
+        8,5/10
+    </div>
+    <p class="descricao">
+        Viajando pelo multiverso, Miles Morales conhece um novo time de Pessoas-Aranha, 
+        formado por heróis de diversas dimensões. 
+        Mas quando os heróis entram em conflito sobre como lidar com uma nova ameaça, 
+        Miles se vê em um impasse.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt9362722/?ref_=nv_sr_srsg_1_tt_4_nm_3_in_0_q_aranhaver" target="_blank" class="botao2">IMDB</a>
+</div>
+</div>
+
+ <!--FILME 3-->
+ 
+ <div class="card-filme3">
+    <img src="Imagem/gravity-falls.jpg" alt="poster do filme" class="poster3">
+    <div class="conteudo">
+        <h2 class="titulo3">Gravity falls</h2>
+        <div class="ano-duração">
+            <span>2012</span>
+            <span>23 min</span>
+        </div>
+    <div class="info">
+        <span class="genero3">Animação/fantasia</span>
+        <div class="avaliacao3"></div>
+        <i class="fa-solid fa-star"></i>
+        8,9/10
+    </div>
+    <p class="descricao">
+        Dois irmãos gêmeos, 
+        o Dipper e a Mabel Pines passam suas férias no centro turístico 
+        de seu tio na cidade de Gravity Falls.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt1865718/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_gravity" target="_blank" class="botao3">IMDB</a>
+</div>
+</div>
+
+<!--FILME 4-->
+ 
+<div class="card-filme4">
+    <img src="Imagem/helluva.webp" alt="poster do filme" class="poster4">
+    <div class="conteudo">
+        <h2 class="titulo4">Helluva Boss</h2>
+        <div class="ano-duração">
+            <span>2019</span>
+            <span>23 min</span>
+        </div>
+    <div class="info">
+        <span class="genero4">Drama/comédia</span>
+        <div class="avaliacao4"></div>
+        <i class="fa-solid fa-star"></i>
+        8,1/10
+    </div>
+    <p class="descricao">
+        No Inferno, Blitzø dirige uma empresa de assassinato voltada para o mundo dos vivos. Junto com seus funcionários,
+         Moxxie, Millie e Loona, eles tentam sobreviver uns aos outros enquanto administram o negócio.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt10691770/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_helluva" target="_blank" class="botao4">IMDB</a>
+</div>
+</div>
+ 
+<!--FILME 5-->
+<div class="card-filme">
+    <img src="Imagem/meninas.png" alt="poster do filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">M. superpoderosas</h2>
+        <div class="ano-duração">
+            <span>1998</span>
+            <span>30 min</span>
+        </div>
+    <div class="info">
+        <span class="genero"> Ação/Comédia</span>
+        <div class="avaliacao"></div>
+        <i class="fa-solid fa-star"></i>
+        7,3/10
+    </div>
+    <p class="descricao">
+        Três garotas superpoderosas constantemente salvam o mundo de monstros e conquistadores.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0175058/?ref_=nv_sr_srsg_4_tt_8_nm_0_in_0_q_power%2520puff" target="_blank" class="botao">IMDB</a>
+</div>
+</div>
+
+
+<!--FILME 6-->
+<div class="card-filme2">
+    <img src="Imagem/Gumball.jpg" alt="poster do filme" class="poster2">
+    <div class="conteudo">
+        <h2 class="titulo2">Gumball</h2>
+        <div class="ano-duração">
+            <span>2011</span>
+            <span>11 min</span>
+        </div>
+    <div class="info">
+        <span class="genero2"> Fantasia/Animação</span>
+        <div class="avaliacao2"></div>
+        <i class="fa-solid fa-star"></i>
+        8,7/10
+    </div>
+    <p class="descricao">
+        Gumball e seu grande amigo Darwin vivem aventuras e não param de se meter em problemas.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt1942683/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_gumball" target="_blank" class="botao2">IMDB</a>
+</div>
+</div>
+
+
+
+<!--FILME 7-->
+<div class="card-filme3">
+    <img src="Imagem/Over_the_Garden_Wall.jpg" alt="poster do filme" class="poster3">
+    <div class="conteudo">
+        <h2 class="titulo3">Over the garden wall</h2>
+        <div class="ano-duração">
+            <span>2014</span>
+            <span>11 min</span>
+        </div>
+    <div class="info">
+        <span class="genero3"> Aventura/Mistério</span>
+        <div class="avaliacao3"></div>
+        <i class="fa-solid fa-star"></i>
+        8,7/10
+    </div>
+    <p class="descricao">
+        Dois irmãos se encontram perdidos em uma terra misteriosa e 
+        tentam encontrar seu caminho de volta para casa.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt3718778/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_over%2520the%2520g" target="_blank" class="botao3">IMDB</a>
+</div>
+</div>
+
+<!--FILME 8-->
+<div class="card-filme4">
+    <img src="Imagem/casa monstro.jpg" alt="poster do filme" class="poster4">
+    <div class="conteudo">
+        <h2 class="titulo4">A casa Monstro</h2>
+        <div class="ano-duração">
+            <span>2006</span>
+            <span>91 min</span>
+        </div>
+    <div class="info">
+        <span class="genero4"> Terror/Comédia</span>
+        <div class="avaliacao4"></div>
+        <i class="fa-solid fa-star"></i>
+        6,7/10
+    </div>
+    <p class="descricao">
+        Um rapaz de 12 anos acredita que há algo de estranho na casa de um velho e rabugento vizinho. 
+        Na véspera do Dia das Bruxas, ele e um amigo decidem investigar e tirar a limpo todas as suas suspeitas.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0385880/?ref_=fn_all_ttl_1" target="_blank" class="botao4">IMDB</a>
+</div>
+</div>
+
+<!--FILME 9-->
+<div class="card-filme">
+    <img src="Imagem/my little pony.jpg" alt="poster do filme" class="poster">
+    <div class="conteudo">
+        <h2 class="titulo">My little pony</h2>
+        <div class="ano-duração">
+            <span>2010</span>
+            <span>22 min</span>
+        </div>
+    <div class="info">
+        <span class="genero">Aventura/Fantasia</span>
+        <div class="avaliacao2"></div>
+        <i class="fa-solid fa-star"></i>
+        7,7/10
+    </div>
+    <p class="descricao">
+        Depois de descobrir que seus amigos, como ela, são os Elementos Mágicos da Harmonia,
+         a estudiosa unicórnio Twilight Sparkle é enviada a 
+        Ponyville para estudar a mágica da amizade com a ajuda dos seus amigos.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt1751105/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_My%2520litt" target="_blank" class="botao">IMDB</a>
+    </div>
+    </div>
+    
+<!--FILME 10-->
+
+<div class="card-filme2">
+<img src="Imagem/wall-e.jpg" alt="poster do filme" class="poster2">
+<div class="conteudo">
+    <h2 class="titulo2">Wall-e</h2>
+    <div class="ano-duração">
+        <span>2008</span>
+        <span>98 min</span>
+    </div>
+<div class="info">
+    <span class="genero2"> Infantil/Ficção científica</span>
+    <div class="avaliacao2"></div>
+    <i class="fa-solid fa-star"></i>
+    8,4/10
+</div>
+<p class="descricao">
+    Num futuro distante, um pequeno robô faz uma viagem que decidirá o destino da humanidade.
+</p>
+<a href="https://www.imdb.com/pt/title/tt0910970/?ref_=nv_sr_srsg_2_tt_5_nm_3_in_0_q_wall-e" target="_blank" class="botao2">IMDB</a>
+</div>
+</div>
+
+<!--FILME 11-->
+
+<div class="card-filme3">
+<img src="Imagem/george.jpg" alt="poster do filme" class="poster3">
+<div class="conteudo">
+    <h2 class="titulo3">George o curioso</h2>
+    <div class="ano-duração">
+        <span>2006</span>
+        <span>87 min</span>
+    </div>
+<div class="info">
+    <span class="genero3">Animação/fantasia</span>
+    <div class="avaliacao3"></div>
+    <i class="fa-solid fa-star"></i>
+    6,5/10
+</div>
+<p class="descricao">
+    O Homem de Chapéu Amarelo é um excêntrico funcionário de museu que cuida de seu macaco de estimaçào,
+     uma criatura curiosa e maravilhosa cujo entusiasmo muitas vezes leva a melhor.
+</p>
+<a href="https://www.imdb.com/pt/title/tt0381971/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_george%2520o%2520c" target="_blank" class="botao3">IMDB</a>
+</div>
+</div>
+
+<!--FILME 12-->
+
+<div class="card-filme4">
+<img src="Imagem/ratin.jpg" alt="poster do filme" class="poster4">
+<div class="conteudo">
+    <h2 class="titulo4">Cam. Aventureiros</h2>
+    <div class="ano-duração">
+        <span>1997</span>
+        <span>23 min</span>
+    </div>
+<div class="info">
+    <span class="genero4">Aventura/Animação</span>
+    <div class="avaliacao4"></div>
+    <i class="fa-solid fa-star"></i>
+    7,4/10
+</div>
+<p class="descricao">
+    Emily, a ratinha do campo, e seu primo Alexander, o rato da cidade, vivem as mais incríveis aventuras. 
+    Percorrendo o mundo visitando parentes e fazendo amigos,
+     eles encontram inventores famosos, compositores, artistas e até realeza.
+</p>
+<a href="https://www.imdb.com/pt/title/tt0126149/?ref_=nv_sr_srsg_0_tt_3_nm_0_in_0_q_camundongos%2520aventureiros" target="_blank" class="botao4">IMDB</a>
+</div>
+</div>
+
+
+<!--FILME 13-->
+ 
+<div class="card-filme5">
+    <img src="Imagem/the owl house.jpg" alt="poster do filme" class="poster5">
+    <div class="conteudo">
+        <h2 class="titulo5">The owl house</h2>
+        <div class="ano-duração">
+            <span>2020</span>
+            <span>22 min</span>
+        </div>
+    <div class="info">
+        <span class="genero5">Animação/fantasia</span>
+        <div class="avaliacao5"></div>
+        <i class="fa-solid fa-star"></i>
+        8,6/10
+    </div>
+    <p class="descricao">
+        Uma adolescente está presa no Reino Demônio
+         e luta contra as forças do mal com uma bruxa rebelde e um pequeno guerreiro.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt8050756/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520ow" target="_blank" class="botao5">IMDB</a>
+</div>
+</div>
+
+<!--FILME 14-->
+<div class="card-filme6">
+    <img src="Imagem/sherk aa.jpg" alt="poster do filme" class="poster6">
+    <div class="conteudo">
+        <h2 class="titulo6">Shrek</h2>
+        <div class="ano-duração">
+            <span>2001</span>
+            <span>90 min</span>
+        </div>
+    <div class="info">
+        <span class="genero6"> Comédia/Fantasia</span>
+        <div class="avaliacao6"></div>
+        <i class="fa-solid fa-star"></i>
+        7,9/10
+    </div>
+    <p class="descricao">
+        O ogro Shrek perde sua paz quando um cavaleiro força personagens de contos de fadas a morarem no pântano.
+         Decidido a ter sua paz de volta,
+         ele parte em uma missão de resgate de uma princesa para o tal lorde.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0126029/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_shre" target="_blank" class="botao6">IMDB</a>
+</div>
+</div>
+
+<!--FILME 15-->
+<div class="card-filme8">
+    <img src="Imagem/monstrinhos.jpg" alt="poster do filme" class="poster8">
+    <div class="conteudo">
+        <h2 class="titulo8">Os Sete Monstrinhos</h2>
+        <div class="ano-duração">
+            <span>2000</span>
+            <span>30 min</span>
+        </div>
+    <div class="info">
+        <span class="genero8"> Comédia/Animação</span>
+        <div class="avaliacao8"></div>
+        <i class="fa-solid fa-star"></i>
+        7,0/10
+    </div>
+    <p class="descricao">
+        O cotidiano de uma divertida família cujos sete irmãos estão sob os cuidados da mãe o tempo todo.
+         Cada um deles tem diferentes feições monstruosas e divertidas personalidades.
+         Eles enfrentam os desafios da infância e ajudam uns aos outros.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0274284/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_7%2520mon" target="_blank" class="botao8">IMDB</a>
+</div>
+</div>
+
+<!--FILME 16-->
+<div class="card-filme9">
+    <img src="Imagem/Ponyo.jpg" alt="poster do filme" class="poster9">
+    <div class="conteudo">
+        <h2 class="titulo9">Ponyo</h2>
+        <div class="ano-duração">
+            <span>2008</span>
+            <span>101 min</span>
+        </div>
+    <div class="info">
+        <span class="genero9"> Aventura/Animação</span>
+        <div class="avaliacao9"></div>
+        <i class="fa-solid fa-star"></i>
+        7,6/10
+    </div>
+    <p class="descricao">
+        Um menino de cinco anos desenvolve um relacionamento com Ponyo,
+         uma jovem princesa peixinho dourado que deseja se tornar humana depois de se apaixonar por ele.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0876563/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Ponyo" target="_blank" class="botao9">IMDB</a>
+</div>
+</div>
+
+<!--FILME 17-->
+ 
+<div class="card-filme5">
+    <img src="Imagem/Pingu.jpg" alt="poster do filme" class="poster5">
+    <div class="conteudo">
+        <h2 class="titulo5">Pingu</h2>
+        <div class="ano-duração">
+            <span>1980</span>
+            <span>5 min</span>
+        </div>
+    <div class="info">
+        <span class="genero5">Animação/Comédia</span>
+        <div class="avaliacao5"></div>
+        <i class="fa-solid fa-star"></i>
+        7,4/10
+    </div>
+    <p class="descricao">
+        O Pingu encontra-se em situações complicadas e cómicas, mas aprende sempre uma lição. 
+        Pingu passa os seus dias com os seus pais e a sua irmã.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0100366/?ref_=fn_all_ttl_1" target="_blank" class="botao5">IMDB</a>
+</div>
+</div>
+
+<!--FILME 18-->
+<div class="card-filme6">
+    <img src="Imagem/amphibia.jpg_large" alt="poster do filme" class="poster6">
+    <div class="conteudo">
+        <h2 class="titulo6">Amphibia</h2>
+        <div class="ano-duração">
+            <span>2019</span>
+            <span>23 min</span>
+        </div>
+    <div class="info">
+        <span class="genero6"> nimação/Aventura</span>
+        <div class="avaliacao6"></div>
+        <i class="fa-solid fa-star"></i>
+        8,3/10
+    </div>
+    <p class="descricao">
+        Anne, de 13 anos, encontra uma arca do tesouro que a envia para Anfibia, um mundo cheio de sapos e insetos gigantes.
+        Com a ajuda de Sprig, ela deve se adaptar à vida em Anfíbios e descobrir sua primeira amizade verdadeira.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt8050740/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_amph" target="_blank" class="botao6">IMDB</a>
+</div>
+</div>
+
+<!--FILME 19-->
+<div class="card-filme8">
+    <img src="Imagem/flapjack.jpg" alt="poster do filme" class="poster8">
+    <div class="conteudo">
+        <h2 class="titulo8">Flapjack</h2>
+        <div class="ano-duração">
+            <span>2008</span>
+            <span>11 min</span>
+        </div>
+    <div class="info">
+        <span class="genero8"> Comédia/Animação</span>
+        <div class="avaliacao8"></div>
+        <i class="fa-solid fa-star"></i>
+        7,8/10
+    </div>
+    <p class="descricao">
+        As aventuras marinhas de um garoto jovem e entusiasmado, 
+        seu mentor capitão-pirata e a baleia falante que o criou desde o nascimento.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt1178180/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_flapjack" target="_blank" class="botao8">IMDB</a>
+</div>
+</div>
+
+<!--FILME 20-->
+<div class="card-filme9">
+    <img src="Imagem/azul.jpg" alt="poster do filme" class="poster9">
+    <div class="conteudo">
+        <h2 class="titulo9">Os smurfs</h2>
+        <div class="ano-duração">
+            <span>2011</span>
+            <span>103 min</span>
+        </div>
+    <div class="info">
+        <span class="genero9"> Aventura/Animação</span>
+        <div class="avaliacao9"></div>
+        <i class="fa-solid fa-star"></i>
+        5,4/10
+    </div>
+    <p class="descricao">
+        Quando o malvado bruxo Gargamel persegue os pequenos Smurfs azuis fora de sua aldeia, 
+        eles caem de seu mundo mágico para Nova York.
+    </p>
+    <a href="https://www.imdb.com/pt/title/tt0472181/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_smurfs" target="_blank" class="botao9">IMDB</a>
+</div>
+</div>
+
+</body>
+
+</html>
